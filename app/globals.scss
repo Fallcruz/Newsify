@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+
+    --black-primary: #000000;
+    --black-secondary: #1E1F20;
+    --white-primary: #FFFFFF;
+    --white-secondary: #F7F7F7;
+    --gray-primary: #707070;
+    --gray-secondary: #CCCCCC;
+    --blue: #1668E8;
+    --green: #C7F2AB;
+}
+
+body {
+    color: var(--black-primary);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+nav .navbar-menu {
+    li {
+        border-color: #00000000;
+    }
+
+    // li.active {
+    //     background-color: var(--blue);
+    //     color: var(--white-primary);
+    // }
+}
+
+@media (width <=960px) {
+    nav .navbar-menu {
+        background: var(--white-primary);
+        position: absolute;
+        top: 70px;
+        right: 5px;
+        // padding: 32px 52px 20px 52px;
+        border: 0.2px solid var(--black-secondary);
+        border-radius: 12px;
+        transition: all 0.4s ease;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
