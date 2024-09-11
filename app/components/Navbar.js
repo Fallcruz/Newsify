@@ -13,7 +13,7 @@ export default function Navbar() {
         setShowNavbar(false)
     }, [pathname]);
     return (
-        <nav className='sticky top-0 flex flex-row items-center justify-between bg-white-primary py-4 lg:px-24 px-8 z-50'>
+        <nav className='sticky top-0 flex flex-row items-center justify-between bg-white-blur backdrop-blur-lg py-4 lg:px-24 px-8 z-50'>
             <div>
                 <h1 className="text-3xl text-blue font-bold">Newsify</h1>
             </div>

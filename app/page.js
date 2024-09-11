@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
+import Brand from "./components/Brand";
+import Features_1 from "./components/Features_1";
+import Footer from "./components/Footer";
 
 export default function Home() {
     return (
@@ -15,7 +18,9 @@ export default function Home() {
             </div>
             <Navbar />
             <Jumbotron />
-            <div className="w-full h-48"></div>
+            <Brand />
+            <Features_1 />
+            <Footer />
         </main>
     );
 }
